@@ -1,7 +1,7 @@
 Sass-Framework
 ==============
 
-Custom HTML5/CSS3 Sass Responsive Framework
+Custom HTML5/CSS3 Sass Flexible/Responsive Framework
 
 Designed and developed by: 
 
