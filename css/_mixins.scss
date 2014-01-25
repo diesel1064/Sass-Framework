@@ -12,17 +12,21 @@
 		$i: 1;
 		$grid-add: 0;
 		$lg-grid-add: 0;
+		$md-grid-add: 0;
 		@while $i < $column {
 			$i: $i + 1;
 		}
 		@if $i > 1 {
 			$grid-add: ($i - 1) * $grid-space;
 			$lg-grid-add: ($i - 1) * $lg-grid-space;
+			$md-grid-add: ($i - 1) * $md-grid-space;
 		}
 		$column-width: $column * 0.0625;
 		$grid: $container-width * $column-width + $grid-add;
 		$lg-column-width: $column * 0.066666666666667;
 		$lg-grid: $lg-container-width * $lg-column-width + $lg-grid-add;
+		$md-column-width: $column * 0.055555555555556;
+		$md-grid: $md-container-width * $md-column-width + $md-grid-add;
 		.col#{$column} {
 			width: $grid;
 			height: 100%;
@@ -33,11 +37,45 @@
 				width: $lg-grid;
 				margin: 0 $lg-grid-margin;
 			}
+			@media (min-width: $md-container-width) and (max-width: $container-width - 1) {
+				width: $md-grid;
+				margin: 0 $md-grid-margin;
+			}
+			@media (max-width: $md-container-width - 1) {
+				width: 100%;
+				margin: 0 0 20px;
+			}
 		}
-		.offset#{$column} {
-			margin-left: $grid + $grid-offset !important;
+	}
+}
+
+@mixin offset($offsets...) {
+	@each $offset in $offsets {
+		$i: 1;
+		$grid-add: 0;
+		$lg-grid-add: 0;
+		$md-grid-add: 0;
+		@while $i < $offset {
+			$i: $i + 1;
+		}
+		@if $i > 1 {
+			$grid-add: ($i - 1) * $grid-space;
+			$lg-grid-add: ($i - 1) * $lg-grid-space;
+			$md-grid-add: ($i - 1) * $md-grid-space;
+		}
+		$column-width: $offset * 0.0625;
+		$grid: $container-width * $column-width + $grid-add;
+		$lg-column-width: $offset * 0.066666666666667;
+		$lg-grid: $lg-container-width * $lg-column-width + $lg-grid-add;
+		$md-column-width: $offset * 0.055555555555556;
+		$md-grid: $md-container-width * $md-column-width + $md-grid-add;
+		.offset#{$offset} {
+			margin-left: $grid + $grid-offset;
 			@media (min-width: $lg-container-width) {
-				margin-left: $lg-grid + $grid-offset !important;
+				margin-left: $lg-grid + $grid-offset;
+			}
+			@media (min-width: $md-container-width) and (max-width: $container-width - 1) {
+				margin-left: $md-grid + $grid-offset;
 			}
 		}
 	}

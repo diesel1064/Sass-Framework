@@ -143,6 +143,12 @@ body {
   @media (min-width: 1200px) {
     .container {
       width: 1200px; } }
+  @media (min-width: 768px) and (max-width: 960px) {
+    .container {
+      width: 768px; } }
+
+[class^="col"] div {
+  padding: 5px; }
 
 .col1 {
   width: 60px;
@@ -154,12 +160,14 @@ body {
     .col1 {
       width: 80.0px;
       margin: 0 10.0px; } }
-
-.offset1 {
-  margin-left: 90.0px !important; }
-  @media (min-width: 1200px) {
-    .offset1 {
-      margin-left: 110.0px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col1 {
+      width: 42.66667px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col1 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col2 {
   width: 140.0px;
@@ -171,12 +179,14 @@ body {
     .col2 {
       width: 180.0px;
       margin: 0 10.0px; } }
-
-.offset2 {
-  margin-left: 170.0px !important; }
-  @media (min-width: 1200px) {
-    .offset2 {
-      margin-left: 210.0px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col2 {
+      width: 105.33333px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col2 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col3 {
   width: 220.0px;
@@ -188,12 +198,14 @@ body {
     .col3 {
       width: 280.0px;
       margin: 0 10.0px; } }
-
-.offset3 {
-  margin-left: 250.0px !important; }
-  @media (min-width: 1200px) {
-    .offset3 {
-      margin-left: 310.0px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col3 {
+      width: 168.0px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col3 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col4 {
   width: 300.0px;
@@ -205,12 +217,14 @@ body {
     .col4 {
       width: 380.0px;
       margin: 0 10.0px; } }
-
-.offset4 {
-  margin-left: 329.99999px !important; }
-  @media (min-width: 1200px) {
-    .offset4 {
-      margin-left: 409.99999px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col4 {
+      width: 230.66666px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col4 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col5 {
   width: 379.99999px;
@@ -222,12 +236,14 @@ body {
     .col5 {
       width: 479.99999px;
       margin: 0 10.0px; } }
-
-.offset5 {
-  margin-left: 409.99999px !important; }
-  @media (min-width: 1200px) {
-    .offset5 {
-      margin-left: 509.99999px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col5 {
+      width: 293.33333px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col5 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col6 {
   width: 459.99999px;
@@ -239,12 +255,14 @@ body {
     .col6 {
       width: 579.99999px;
       margin: 0 10.0px; } }
-
-.offset6 {
-  margin-left: 489.99999px !important; }
-  @media (min-width: 1200px) {
-    .offset6 {
-      margin-left: 609.99999px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col6 {
+      width: 355.99999px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col6 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col7 {
   width: 539.99999px;
@@ -256,12 +274,14 @@ body {
     .col7 {
       width: 679.99999px;
       margin: 0 10.0px; } }
-
-.offset7 {
-  margin-left: 569.99999px !important; }
-  @media (min-width: 1200px) {
-    .offset7 {
-      margin-left: 709.99999px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col7 {
+      width: 418.66666px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col7 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col8 {
   width: 619.99999px;
@@ -273,12 +293,14 @@ body {
     .col8 {
       width: 779.99999px;
       margin: 0 10.0px; } }
-
-.offset8 {
-  margin-left: 649.99999px !important; }
-  @media (min-width: 1200px) {
-    .offset8 {
-      margin-left: 809.99999px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col8 {
+      width: 481.33332px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col8 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col9 {
   width: 699.99999px;
@@ -290,12 +312,14 @@ body {
     .col9 {
       width: 879.99999px;
       margin: 0 10.0px; } }
-
-.offset9 {
-  margin-left: 729.99999px !important; }
-  @media (min-width: 1200px) {
-    .offset9 {
-      margin-left: 909.99999px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col9 {
+      width: 543.99999px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col9 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col10 {
   width: 779.99999px;
@@ -307,12 +331,14 @@ body {
     .col10 {
       width: 979.99999px;
       margin: 0 10.0px; } }
-
-.offset10 {
-  margin-left: 809.99999px !important; }
-  @media (min-width: 1200px) {
-    .offset10 {
-      margin-left: 1009.99999px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col10 {
+      width: 606.66666px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col10 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col11 {
   width: 859.99999px;
@@ -324,12 +350,14 @@ body {
     .col11 {
       width: 1079.99999px;
       margin: 0 10.0px; } }
-
-.offset11 {
-  margin-left: 889.99999px !important; }
-  @media (min-width: 1200px) {
-    .offset11 {
-      margin-left: 1109.99999px !important; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col11 {
+      width: 669.33332px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col11 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
 .col12 {
   width: 939.99999px;
@@ -341,9 +369,110 @@ body {
     .col12 {
       width: 1179.99999px;
       margin: 0 10.0px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .col12 {
+      width: 731.99999px;
+      margin: 0 10.0px; } }
+  @media (max-width: 767px) {
+    .col12 {
+      width: 100%;
+      margin: 0 0 20px; } }
 
-.offset12 {
-  margin-left: 969.99998px !important; }
+.offset1 {
+  margin-left: 90.0px; }
   @media (min-width: 1200px) {
-    .offset12 {
-      margin-left: 1209.99998px !important; } }
+    .offset1 {
+      margin-left: 110.0px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset1 {
+      margin-left: 72.66666px; } }
+
+.offset2 {
+  margin-left: 170.0px; }
+  @media (min-width: 1200px) {
+    .offset2 {
+      margin-left: 210.0px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset2 {
+      margin-left: 135.33333px; } }
+
+.offset3 {
+  margin-left: 250.0px; }
+  @media (min-width: 1200px) {
+    .offset3 {
+      margin-left: 310.0px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset3 {
+      margin-left: 198.0px; } }
+
+.offset4 {
+  margin-left: 329.99999px; }
+  @media (min-width: 1200px) {
+    .offset4 {
+      margin-left: 409.99999px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset4 {
+      margin-left: 260.66666px; } }
+
+.offset5 {
+  margin-left: 409.99999px; }
+  @media (min-width: 1200px) {
+    .offset5 {
+      margin-left: 509.99999px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset5 {
+      margin-left: 323.33333px; } }
+
+.offset6 {
+  margin-left: 489.99999px; }
+  @media (min-width: 1200px) {
+    .offset6 {
+      margin-left: 609.99999px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset6 {
+      margin-left: 385.99999px; } }
+
+.offset7 {
+  margin-left: 569.99999px; }
+  @media (min-width: 1200px) {
+    .offset7 {
+      margin-left: 709.99999px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset7 {
+      margin-left: 448.66666px; } }
+
+.offset8 {
+  margin-left: 649.99999px; }
+  @media (min-width: 1200px) {
+    .offset8 {
+      margin-left: 809.99999px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset8 {
+      margin-left: 511.33332px; } }
+
+.offset9 {
+  margin-left: 729.99999px; }
+  @media (min-width: 1200px) {
+    .offset9 {
+      margin-left: 909.99999px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset9 {
+      margin-left: 573.99999px; } }
+
+.offset10 {
+  margin-left: 809.99999px; }
+  @media (min-width: 1200px) {
+    .offset10 {
+      margin-left: 1009.99999px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset10 {
+      margin-left: 636.66665px; } }
+
+.offset11 {
+  margin-left: 889.99999px; }
+  @media (min-width: 1200px) {
+    .offset11 {
+      margin-left: 1109.99999px; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .offset11 {
+      margin-left: 699.33332px; } }

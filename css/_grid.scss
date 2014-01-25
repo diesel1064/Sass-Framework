@@ -13,6 +13,12 @@
 	@media (min-width: $lg-container-width) {
 		width: $lg-container-width;
 	}
+	@media (min-width: $md-container-width) and (max-width: $container-width) {
+		width: $md-container-width;
+	}
+}
+[class^="col"] div {
+	padding: 5px;
 }
 @include grid(1,2,3,4,5,6,7,8,9,10,11,12);
-
+@include offset(1,2,3,4,5,6,7,8,9,10,11);
