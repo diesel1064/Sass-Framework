@@ -1,5 +1,20 @@
-/*!
- * Framework v1.0.0 (https://github.com/diesel1064/Sass-Framework)
- * Copyright 2014 Dave Evans Design
- * Licensed under http://www.apache.org/licenses/LICENSE-2.0
- */
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+}
+.row, .clearfix {
+	zoom: 1; 
+	&:before, &:after {
+		content: '\0020';
+		@include hidden;
+	}
+}
+.clear {
+	@include hidden;
+}
+@-ms-viewport {
+ 	width: device-width;
+}
+#nav-collapse {
+	display: none;
+}

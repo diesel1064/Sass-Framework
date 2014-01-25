@@ -1,5 +1,44 @@
-/*!
- * Framework v1.0.0 (https://github.com/diesel1064/Sass-Framework)
- * Copyright 2014 Dave Evans Design
- * Licensed under http://www.apache.org/licenses/LICENSE-2.0
- */
+@mixin hidden {
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+@mixin grid($columns...) {
+	@each $column in $columns {
+		$i: 1;
+		$grid-add: 0;
+		$lg-grid-add: 0;
+		@while $i < $column {
+			$i: $i + 1;
+		}
+		@if $i > 1 {
+			$grid-add: ($i - 1) * $grid-space;
+			$lg-grid-add: ($i - 1) * $lg-grid-space;
+		}
+		$column-width: $column * 0.0625;
+		$grid: $container-width * $column-width + $grid-add;
+		$lg-column-width: $column * 0.066666666666667;
+		$lg-grid: $lg-container-width * $lg-column-width + $lg-grid-add;
+		.col#{$column} {
+			width: $grid;
+			height: 100%;
+			float: left;
+			background: $col-color;
+			margin: 0 $grid-margin;
+			@media (min-width: $lg-container-width) {
+				width: $lg-grid;
+				margin: 0 $lg-grid-margin;
+			}
+		}
+		.offset#{$column} {
+			margin-left: $grid + $grid-offset !important;
+			@media (min-width: $lg-container-width) {
+				margin-left: $lg-grid + $grid-offset !important;
+			}
+		}
+	}
+}

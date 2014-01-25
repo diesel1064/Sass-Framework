@@ -1,5 +1,12 @@
-/*!
- * Framework v1.0.0 (https://github.com/diesel1064/Sass-Framework)
- * Copyright 2014 Dave Evans Design
- * Licensed under http://www.apache.org/licenses/LICENSE-2.0
- */
+//CREATE BREAKPOINTS
+$container-width: 960px;
+$lg-container-width: 1200px;
+
+$grid-margin: $container-width * 0.010416666;
+$grid-space: $grid-margin * 2;
+$grid-offset: $grid-margin * 3;
+$lg-grid-margin: $grid-margin;
+$lg-grid-space: $lg-grid-margin * 2;
+$lg-grid-offset: $lg-grid-margin * 3;
+
+$col-color: blue;
