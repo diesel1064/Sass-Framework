@@ -9,7 +9,9 @@ Dave Evans http://www.daveevans.me
 ###Features
 
 -By simply inputting a few breakpoint variables, the entire grid system will dynamically adjust widths, margins and padding (WIP)
+
 -By inputting primary and secondary color variables, the entire site will adjust accordingly (WIP)
+
 -Detailed documentation explaining the entire framework (WIP)
 
 
