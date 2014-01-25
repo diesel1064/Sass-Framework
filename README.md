@@ -4,10 +4,16 @@ Sass-Framework
 Custom HTML5/CSS3 Sass Flexible/Responsive Framework
 
 Designed and developed by: 
-
 Dave Evans http://www.daveevans.me
 
-###Licensed under http://www.apache.org/licenses/LICENSE-2.0
+###Features
+
+-By simply inputting a few breakpoint variables, the entire grid system will dynamically adjust widths, margins and padding (WIP)
+-By inputting primary and secondary color variables, the entire site will adjust accordingly (WIP)
+-Detailed documentation explaining the entire framework (WIP)
+
+
+####Licensed under http://www.apache.org/licenses/LICENSE-2.0
 
 Copyright &copy; Dave Evans http://www.daveevans.me
 
