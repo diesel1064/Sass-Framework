@@ -10,11 +10,17 @@ Dave Evans http://www.daveevans.me
 ---------------------------
 ####Features
 
---By simply inputting a few breakpoint variables, the entire grid system will dynamically adjust widths, margins and padding (WIP)
+--By simply inputting breakpoints for your standard desktop size, large desktop size and tablet size, the entire grid system will dynamically adjust widths, margins and padding
 
 --By inputting primary and secondary color variables, the entire site will adjust accordingly (WIP)
 
 --Detailed documentation explaining the entire framework (WIP)
+
+--Framework will have options for fixed navbar and/or footer (WIP)
+
+--Framework will have options for customizing HTML form elements (WIP)
+
+--Framwork is cross-browser compatible and tested in ... (WIP)
 
 ---------------------------
 
