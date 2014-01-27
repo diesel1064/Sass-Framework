@@ -15,6 +15,20 @@ body {
 @-ms-viewport {
  	width: device-width;
 }
-#nav-collapse {
-	display: none;
+@if($sticky-footer == true) {
+	.page-wrapper {
+		min-height: 100%;
+	}
+	.inner-page-wrapper {
+		overflow: auto;
+		padding-bottom: $footer-height;
+	}
+	footer {
+		position: relative;
+		margin-top: -$footer-height;
+		clear: both;
+		height: $footer-height;
+		line-height: $footer-height;
+		text-align: center;
+	}
 }

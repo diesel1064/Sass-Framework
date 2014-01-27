@@ -1,0 +1,14 @@
+//PRIMARY AND SECONDARY COLORS
+$primary-color: gray;
+$secondary-color: white;
+
+$col-color: blue;
+
+//USER DEFINED STYLE SETTINGS
+$sticky-footer: true;
+$footer-height: 60px;
+
+//CREATE BREAKPOINTS FOR RESPONSIVE GRID
+$md-container-width: 768px; 	  //DEFAULT TABLET SIZE 768px
+$container-width: 960px;		  //DEFAULT STANDARD SIZE 960px
+$lg-container-width: 1200px;	  //DEFAULT LARGE SCREEN 1200px
