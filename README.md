@@ -9,6 +9,10 @@ Designed and developed by: [Dave Evans](http://www.daveevans.me) from [Allegro C
 ###Features
 ####-Current and WIP
 
+- User will have the ability to download compressed and precompiled sass-framework (WIP)
+
+- User will have the ability to download entire sass-framework to use in own sass compiler to make any desired changes to the scss files (WIP)
+
 - By simply inputting breakpoints for your standard desktop size, large desktop size and tablet size, the entire grid system will dynamically adjust widths, margins and padding
 
 - By inputting primary and secondary color variables, the entire site will adjust accordingly (WIP)
