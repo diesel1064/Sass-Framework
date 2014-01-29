@@ -15,11 +15,17 @@ Designed and developed by: [Dave Evans](http://www.daveevans.me) from [Allegro C
 
 - By simply inputting breakpoints for your standard desktop size, large desktop size and tablet size, the entire grid system will dynamically adjust widths, margins and padding
 
-- By inputting primary and secondary color variables, the entire site will adjust accordingly (WIP)
+- By inputting specific color variables and boolean options, the entire site will adjust accordingly
+
+- Dynamic 'stretchy' multi-level (4 levels) navigation that adjusts automatically
 
 - Detailed documentation explaining the entire framework (WIP)
 
-- Framework will have options for fixed navbar and/or footer (WIP)
+- Framework will have options for fixed and/or sticky footer
+
+- Framework will have options for full length navigation or inside container
+
+- Framework will have options for fixed navigation or standard (WIP)
 
 - Framework will have options for customizing HTML form elements (WIP)
 
