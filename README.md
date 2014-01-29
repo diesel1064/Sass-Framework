@@ -29,7 +29,7 @@ Designed and developed by: [Dave Evans](http://www.daveevans.me) from [Allegro C
 
 - Framework will have options for customizing HTML form elements (WIP)
 
-- Framwork is cross-browser compatible and tested in ... (WIP)
+- Framework is cross-browser compatible and tested in ... (WIP)
 
 ---------------------------
 
