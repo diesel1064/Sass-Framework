@@ -1,12 +1,24 @@
-//PRIMARY AND SECONDARY COLORS
-$primary-color: gray;
-$secondary-color: white;
-
-$col-color: blue;
+//USER DEFINED COLOR SETTINGS
+$primary-bg: orange;
+	$primary-bg-gradient: true;
+		$primary-bg-gradient-second-color: darken($primary-bg, 40%);
+$primary-text-color: #FFF;
+$link-color: blue;
+	$link-hover-color: grey;
+$column-bg: desaturate($primary-bg, 20%); //OR SET TO TRANSPARENT FOR CLEAR
+	$column-text-color: inherit;
+$footer-bg: desaturate($primary-bg, 30%);
+$header-height: 150px;
+$navigation-bg-color: #333;
+	$navigation-text-color: #fff;
+		$navigation-text-hover-color: $primary-bg;
+			$navigation-full-width: true;
+$hero-bg: #999;
+	$hero-text-align: center;
 
 //USER DEFINED STYLE SETTINGS
 $sticky-footer: true;
-$footer-height: 60px;
+$footer-height: 65px;
 
 //CREATE BREAKPOINTS FOR RESPONSIVE GRID
 $md-container-width: 768px; 	  //DEFAULT TABLET SIZE 768px

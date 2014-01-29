@@ -11,3 +11,12 @@
 @import "_globals.scss";
 @import "_grid.scss";
 
+.hero {
+	background: $hero-bg;
+	overflow: hidden;
+	margin-bottom: 10px;
+	text-align: $hero-text-align;
+	[class^="col"]{
+		background:transparent;
+	}
+}

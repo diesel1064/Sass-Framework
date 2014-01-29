@@ -64,7 +64,8 @@ html {
   html body {
     height: 100%;
     margin: 0;
-    position: relative; }
+    position: relative;
+    padding: 0; }
     html body a {
       text-decoration: none; }
       html body a:hover, html body a:active, html body a:focus {
@@ -96,7 +97,20 @@ h6 {
 
 body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 12px; }
+  font-size: 12px;
+  background: orange;
+  background: -moz-linear-gradient(top, orange 50%, #332100 100%) no-repeat #332100;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, orange), color-stop(100%, #332100)) no-repeat #332100;
+  background: -webkit-linear-gradient(top, orange 50%, #332100 100%) no-repeat #332100;
+  background: -o-linear-gradient(top, orange 50%, #332100 100%) no-repeat #332100;
+  background: -ms-linear-gradient(top, orange 50%, #332100 100%) no-repeat #332100;
+  background: linear-gradient(to bottom, orange 50%, #332100 100%) no-repeat #332100;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='$primary-bg-gradient-second-color',GradientType=0 ) no-repeat #332100;
+  color: white; }
+  body a {
+    color: blue; }
+    body a:hover {
+      color: grey; }
 
 .row, .clearfix {
   zoom: 1; }
@@ -120,24 +134,148 @@ body {
 @-ms-viewport {
   width: device-width; }
 
+header {
+  height: 150px; }
+
+nav {
+  background: #333333;
+  color: white;
+  position: relative;
+  font-size: 20px;
+  text-align: center; }
+  nav .carrot {
+    position: absolute;
+    top: 50%;
+    margin-left: 3px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white; }
+  nav .carrot-right {
+    position: absolute;
+    top: 40%;
+    right: 3px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid white; }
+  nav .menu-button {
+    display: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative; }
+    nav .menu-button .carrot {
+      right: 20px; }
+    nav .menu-button:hover {
+      color: orange; }
+      nav .menu-button:hover .carrot {
+        border-top: 5px solid orange; }
+      nav .menu-button:hover .carrot-right {
+        border-left: 5px solid orange; }
+    @media (max-width: 768px) {
+      nav .menu-button {
+        display: block; } }
+  nav .menu-button.open {
+    background: #666666; }
+  nav .main-nav {
+    position: relative; }
+    @media (max-width: 768px) {
+      nav .main-nav {
+        display: none; }
+        nav .main-nav li {
+          width: 100% !important; }
+        nav .main-nav .child {
+          background: transparent;
+          position: relative;
+          margin: 0;
+          padding: 5px 0;
+          box-shadow: none;
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none; } }
+  nav > ul {
+    display: block; }
+    nav > ul > li {
+      display: block;
+      float: left;
+      padding: 10px 0;
+      position: relative; }
+  nav ul li:hover {
+    cursor: pointer;
+    background: #4d4d4d; }
+    nav ul li:hover a {
+      color: orange; }
+  nav ul li a {
+    color: white; }
+    nav ul li a:hover {
+      color: orange; }
+  nav li.parent {
+    position: relative; }
+    nav li.parent:hover .carrot {
+      border-top: 5px solid orange; }
+    nav li.parent:hover .carrot-right {
+      border-left: 5px solid orange; }
+  nav ul.child {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    left: 10%;
+    white-space: nowrap;
+    text-align: left;
+    background: #666666;
+    z-index: 10;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+    nav ul.child:hover {
+      display: block; }
+    nav ul.child li {
+      padding: 10px 20px; }
+    nav ul.child .child {
+      margin-top: -30px;
+      margin-left: 120px; }
+
+footer {
+  text-align: center;
+  clear: both;
+  position: relative;
+  height: 65px;
+  line-height: 65px;
+  background: #d99a26;
+  background: -moz-linear-gradient(top, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #d99a26), color-stop(100%, #ad7b1f)) no-repeat #ad7b1f;
+  background: -webkit-linear-gradient(top, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
+  background: -o-linear-gradient(top, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
+  background: -ms-linear-gradient(top, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
+  background: linear-gradient(to bottom, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$footer-bg', endColorstr='$secondary-footer-bg',GradientType=0 ) no-repeat #ad7b1f;
+  border-top: 2px solid;
+  border-top-color: #ffc966;
+  box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.5);
+  margin-top: -70px; }
+
 .page-wrapper {
   min-height: 100%; }
 
 .inner-page-wrapper {
   overflow: auto;
-  padding-bottom: 60px; }
+  padding-bottom: 65px; }
 
-footer {
+.full {
+  width: 100%;
   position: relative;
-  margin-top: -60px;
-  clear: both;
-  height: 60px;
-  line-height: 60px;
-  text-align: center; }
-
-.row {
-  margin-bottom: 20px;
-  min-height: 20px; }
+  margin: 0;
+  padding: 10px 0; }
+  .full:after {
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0; }
 
 .container {
   position: relative;
@@ -157,16 +295,25 @@ footer {
   @media (min-width: 768px) and (max-width: 960px) {
     .container {
       width: 768px; } }
+  @media (max-width: 767px) {
+    .container {
+      width: 100%; } }
+
+.row {
+  margin-bottom: 20px;
+  min-height: 20px;
+  overflow: hidden; }
 
 [class^="col"] div {
-  padding: 5px; }
+  padding: 10px; }
 
 .col1 {
   width: 60px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col1 {
       width: 80.0px;
@@ -184,8 +331,9 @@ footer {
   width: 140.0px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col2 {
       width: 180.0px;
@@ -203,8 +351,9 @@ footer {
   width: 220.0px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col3 {
       width: 280.0px;
@@ -222,8 +371,9 @@ footer {
   width: 300.0px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col4 {
       width: 380.0px;
@@ -241,8 +391,9 @@ footer {
   width: 379.99999px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col5 {
       width: 479.99999px;
@@ -260,8 +411,9 @@ footer {
   width: 459.99999px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col6 {
       width: 579.99999px;
@@ -279,8 +431,9 @@ footer {
   width: 539.99999px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col7 {
       width: 679.99999px;
@@ -298,8 +451,9 @@ footer {
   width: 619.99999px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col8 {
       width: 779.99999px;
@@ -317,8 +471,9 @@ footer {
   width: 699.99999px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col9 {
       width: 879.99999px;
@@ -336,8 +491,9 @@ footer {
   width: 779.99999px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col10 {
       width: 979.99999px;
@@ -355,8 +511,9 @@ footer {
   width: 859.99999px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col11 {
       width: 1079.99999px;
@@ -374,8 +531,9 @@ footer {
   width: 939.99999px;
   height: 100%;
   float: left;
-  background: blue;
-  margin: 0 10.0px; }
+  background: #e69e19;
+  margin: 0 10.0px;
+  color: inherit; }
   @media (min-width: 1200px) {
     .col12 {
       width: 1179.99999px;
@@ -487,3 +645,11 @@ footer {
   @media (min-width: 768px) and (max-width: 959px) {
     .offset11 {
       margin-left: 699.33332px; } }
+
+.hero {
+  background: #999999;
+  overflow: hidden;
+  margin-bottom: 10px;
+  text-align: center; }
+  .hero [class^="col"] {
+    background: transparent; }

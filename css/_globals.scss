@@ -1,6 +1,17 @@
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 12px;
+	
+	@if($primary-bg-gradient == true) {
+		@include gradient-bg($primary-bg,$primary-bg-gradient-second-color)
+	} @else {background: $primary-bg; }
+	color: $primary-text-color; 
+	a {
+		color: $link-color;
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
 }
 .row, .clearfix {
 	zoom: 1; 
@@ -15,6 +26,161 @@ body {
 @-ms-viewport {
  	width: device-width;
 }
+header {
+	height: $header-height;
+}
+nav {
+	@if($navigation-full-width != true) {
+		background: transparent;
+		.container {
+			background: $navigation-bg-color;
+		}
+	} @else {
+		background: $navigation-bg-color;
+	}
+	color: $navigation-text-color;
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	.carrot {
+		position: absolute;
+		top: 50%;
+		margin-left: 3px;
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid $navigation-text-color;
+	}
+	.carrot-right {
+		position: absolute;
+		top: 40%;
+		right: 3px;
+		width: 0;
+		height: 0;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid $navigation-text-color;
+	}
+	.menu-button {
+		display: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		position: relative;
+		.carrot {
+			right: 20px;
+		}
+		&:hover {
+			color: $navigation-text-hover-color;
+			.carrot {
+				border-top: 5px solid $navigation-text-hover-color;
+			}
+			.carrot-right {
+				border-left: 5px solid $navigation-text-hover-color;
+			}
+		}
+		@media (max-width: $md-container-width) {
+			display: block;
+		}
+	}
+	.menu-button.open {
+		background: $nav-child-bg;
+	}
+	.main-nav {
+		position: relative;
+		@media (max-width: $md-container-width) {
+			display: none;
+			li {
+				width: 100% !important;
+			}
+			.child {
+				background: transparent;
+				position: relative;
+				// display: block;
+				margin: 0;
+				padding: 5px 0;
+				box-shadow: none;
+					-moz-box-shadow: none;
+						-webkit-box-shadow: none;
+			}
+		}
+	}
+	> ul {
+		display: block;
+		> li {
+			display: block;
+			float: left;
+			padding: 10px 0;
+			position: relative;
+		}
+	}
+	ul li {
+		&:hover {
+			cursor: pointer;
+			background: $nav-bg-hover-color;
+			a {
+				color: $navigation-text-hover-color;
+			}
+		}
+	}
+	ul li a {
+		color: $navigation-text-color;
+		&:hover {
+			color: $navigation-text-hover-color;
+		}
+	}
+	li.parent {
+		position: relative;
+		&:hover {
+			.carrot {
+				border-top: 5px solid $navigation-text-hover-color;
+			}
+			.carrot-right {
+				border-left: 5px solid $navigation-text-hover-color;
+			}
+		}
+	}
+	ul.child {
+		display: none;
+		position: absolute;
+		margin-top: 10px;
+		left:10%;
+		white-space: nowrap;
+		text-align: left;
+		background: $nav-child-bg;
+		z-index: 10;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+			-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+				-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+		&:hover {
+			display: block;
+		}
+		li {
+			padding: 10px 20px;
+		}
+		.child {
+			margin-top: -30px;
+			margin-left: 120px;
+		}
+	}
+}
+footer {
+	text-align: center;
+	clear: both;
+	position: relative;
+	height: $footer-height;
+	line-height: $footer-height;
+	// background: $footer-bg;
+	@include footer-bg($footer-bg);
+	border-top: 2px solid;
+	border-top-color: $footer-border;
+	box-shadow: 0px -5px 30px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px -5px 30px rgba(0,0,0,0.5);
+			-webkit-box-shadow: 0px -5px 30px rgba(0,0,0,0.5);
+	@if($sticky-footer == true) {
+		margin-top: -$footer-height - 5px;
+	}
+}
 @if($sticky-footer == true) {
 	.page-wrapper {
 		min-height: 100%;
@@ -22,13 +188,5 @@ body {
 	.inner-page-wrapper {
 		overflow: auto;
 		padding-bottom: $footer-height;
-	}
-	footer {
-		position: relative;
-		margin-top: -$footer-height;
-		clear: both;
-		height: $footer-height;
-		line-height: $footer-height;
-		text-align: center;
 	}
 }

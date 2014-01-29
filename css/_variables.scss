@@ -10,3 +10,18 @@ $md-grid-offset: $grid-margin * 3;
 $lg-grid-margin: $grid-margin;
 $lg-grid-space: $lg-grid-margin * 2;
 $lg-grid-offset: $lg-grid-margin * 3;
+
+//**COLOR FORMULAS
+$nav-bg-hover-color: lighten($navigation-bg-color, 10%);
+$nav-child-bg: lighten($navigation-bg-color, 20%);
+
+
+$footer-border: lighten($primary-bg, 20%);
+$footer-secondary-bg: darken($footer-bg, 30%);
+
+// $secondary-color: complement($primary-color);
+// $background: desaturate($primary-color, 30%);
+// $text-color: complement($secondary-color);
+// $secondary-text-color: $primary-color;
+// $mixed-color: mix($background, $secondary-color);
+// $highlighted-text-color: lighten($secondary-color, 20%);

@@ -31,8 +31,10 @@
 			width: $grid;
 			height: 100%;
 			float: left;
-			background: $col-color;
+			background: $column-bg;
 			margin: 0 $grid-margin;
+			color: $column-text-color;
+			// text-align: center;
 			@media (min-width: $lg-container-width) {
 				width: $lg-grid;
 				margin: 0 $lg-grid-margin;
@@ -79,4 +81,25 @@
 			}
 		}
 	}
+}
+@mixin gradient-bg($primary-color, $primary-bg-gradient-second-color) {
+	background: $primary-color;
+	background: -moz-linear-gradient(top,  $primary-color 50%, $primary-bg-gradient-second-color 100%) no-repeat $primary-bg-gradient-second-color;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,$primary-color), color-stop(100%,$primary-bg-gradient-second-color)) no-repeat $primary-bg-gradient-second-color;
+	background: -webkit-linear-gradient(top,  $primary-color 50%,$primary-bg-gradient-second-color 100%) no-repeat $primary-bg-gradient-second-color;
+	background: -o-linear-gradient(top,  $primary-color 50%,$primary-bg-gradient-second-color 100%) no-repeat $primary-bg-gradient-second-color;
+	background: -ms-linear-gradient(top,  $primary-color 50%,$primary-bg-gradient-second-color 100%) no-repeat $primary-bg-gradient-second-color;
+	background: linear-gradient(to bottom,  $primary-color 50%,$primary-bg-gradient-second-color 100%) no-repeat $primary-bg-gradient-second-color;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$primary-bg-gradient-second-color',GradientType=0 ) no-repeat $primary-bg-gradient-second-color;
+}
+@mixin footer-bg($footer-bg) {
+	$secondary-footer-bg: darken($footer-bg, 10%);
+	background: $footer-bg;
+	background: -moz-linear-gradient(top,  $footer-bg 50%, $secondary-footer-bg 100%) no-repeat $secondary-footer-bg;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,$footer-bg), color-stop(100%,$secondary-footer-bg)) no-repeat $secondary-footer-bg;
+	background: -webkit-linear-gradient(top,  $footer-bg 50%,$secondary-footer-bg 100%) no-repeat $secondary-footer-bg;
+	background: -o-linear-gradient(top,  $footer-bg 50%,$secondary-footer-bg 100%) no-repeat $secondary-footer-bg;
+	background: -ms-linear-gradient(top,  $footer-bg 50%,$secondary-footer-bg 100%) no-repeat $secondary-footer-bg;
+	background: linear-gradient(to bottom,  $footer-bg 50%,$secondary-footer-bg 100%) no-repeat $secondary-footer-bg;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$footer-bg', endColorstr='$secondary-footer-bg',GradientType=0 ) no-repeat $secondary-footer-bg;
 }

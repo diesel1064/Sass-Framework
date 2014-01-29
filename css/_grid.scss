@@ -1,6 +1,11 @@
-.row{
-	margin-bottom: 20px;
-	min-height: 20px;
+.full {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 10px 0;
+	&:after {
+		@include hidden;
+	}
 }
 .container{
 	position: relative;
@@ -16,9 +21,19 @@
 	@media (min-width: $md-container-width) and (max-width: $container-width) {
 		width: $md-container-width;
 	}
+	@media (max-width: $md-container-width - 1) {
+		width: 100%;
+	}
 }
-[class^="col"] div {
-	padding: 5px;
+.row{
+	margin-bottom: 20px;
+	min-height: 20px;
+	overflow: hidden;
+}
+[class^="col"] {
+	div {
+		padding: 10px;
+	}
 }
 @include grid(1,2,3,4,5,6,7,8,9,10,11,12);
 @include offset(1,2,3,4,5,6,7,8,9,10,11);
