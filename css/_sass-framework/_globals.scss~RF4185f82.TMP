@@ -23,12 +23,6 @@ body {
 .clear {
 	@include hidden;
 }
-.hide {
-	display: none;
-}
-.overflow {
-	overflow: hidden;
-}
 @-ms-viewport {
  	width: device-width;
 }
@@ -51,7 +45,7 @@ nav {
 	.carrot {
 		position: absolute;
 		top: 50%;
-		margin-left: 40px;
+		margin-left: 3px;
 		width: 0;
 		height: 0;
 		border-left: 5px solid transparent;
@@ -103,25 +97,19 @@ nav {
 	}
 	.main-nav {
 		position: relative;
-		@media (max-width: $md-container-width - 1) {
+		@media (max-width: $md-container-width) {
 			display: none;
 			li {
 				width: 100% !important;
 				float: left;
 				clear: both;
-				a {
-					color: $navigation-text-color;
-					&:hover {
-						color: $navigation-text-hover-color;
-					} 
-				}
 			}
 			.child {
 				background: transparent;
 				position: relative;
 				text-align: center;
-				// display: block;
-				margin: 5px 0;
+				display: block;
+				margin: 0;
 				padding: 0;
 				box-shadow: none;
 					-moz-box-shadow: none;
@@ -144,27 +132,20 @@ nav {
 			position: relative;
 		}
 	}
-	ul.lg li {
-		a {
-			color: $navigation-text-color;
-			&:hover {
-				color: $navigation-text-hover-color;
-			}
-		}
+	ul li {
 		&:hover {
 			cursor: pointer;
 			background: $nav-bg-hover-color;
-			@media (max-width: $md-container-width - 1) {
-				background: $navigation-bg-color;
-			}
 			a {
 				color: $navigation-text-hover-color;
 			}
-			> .child {
-				display: block !important;
-			}
 		}
-
+	}
+	ul li a {
+		color: $navigation-text-color;
+		&:hover {
+			color: $navigation-text-hover-color;
+		}
 	}
 	li.parent {
 		position: relative;
@@ -207,18 +188,6 @@ nav {
 				margin-top: 0;
 				margin-left: 0;
 			}
-		}
-	}
-	@media (max-width: $md-container-width - 1) {
-		.carrot-wrap {
-			position: absolute;
-			right: 0;
-			top: 0;
-			height: 100%;
-			padding: 0 20px 0 30px;
-			background: lighten($navigation-bg-color, 5%);
-			border-left: dotted 1px $nav-child-bg;
-			cursor: pointer;
 		}
 	}
 }

@@ -79,6 +79,9 @@
 			@media (min-width: $md-container-width) and (max-width: $container-width - 1) {
 				margin-left: $md-grid + $grid-offset;
 			}
+			@media (max-width: $md-container-width - 1) {
+				margin-left: 0;
+			}
 		}
 	}
 }

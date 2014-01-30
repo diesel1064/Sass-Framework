@@ -1,5 +1,5 @@
 //USER DEFINED COLOR SETTINGS
-$primary-bg: blue;
+$primary-bg: orange;
 	$primary-bg-gradient: true;
 		$primary-bg-gradient-second-color: darken($primary-bg, 40%);
 $primary-text-color: #FFF;
@@ -14,13 +14,13 @@ $header-height: 150px;
 
 //NAVIGATION SECTION
 $navigation-bg-color: #333;
-	$navigation-text-color: #fff;
+	$navigation-text-color: #FFF;
 		$navigation-text-hover-color: $primary-bg;
 			$navigation-full-width: true;
 
 //HERO SECTION BELOW NAVIGATION
 $hero-bg: complement($primary-bg);
-	$hero-bg-color: complement($hero-bg);
+	$hero-bg-text-color: complement($hero-bg);
 		$hero-text-align: center;
 
 //USER DEFINED STYLE SETTINGS
@@ -30,4 +30,4 @@ $footer-height: 65px;
 //CREATE BREAKPOINTS FOR RESPONSIVE GRID
 $md-container-width: 768px; 	  //DEFAULT TABLET SIZE 768px
 $container-width: 960px;		  //DEFAULT STANDARD SIZE 960px
-$lg-container-width: 1300px;	  //DEFAULT LARGE SCREEN 1200px
+$lg-container-width: 1200px;	  //DEFAULT LARGE SCREEN 1200px
