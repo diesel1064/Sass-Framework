@@ -98,14 +98,14 @@ h6 {
 body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 12px;
-  background: orange;
-  background: -moz-linear-gradient(top, orange 50%, #332100 100%) no-repeat #332100;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, orange), color-stop(100%, #332100)) no-repeat #332100;
-  background: -webkit-linear-gradient(top, orange 50%, #332100 100%) no-repeat #332100;
-  background: -o-linear-gradient(top, orange 50%, #332100 100%) no-repeat #332100;
-  background: -ms-linear-gradient(top, orange 50%, #332100 100%) no-repeat #332100;
-  background: linear-gradient(to bottom, orange 50%, #332100 100%) no-repeat #332100;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='$primary-bg-gradient-second-color',GradientType=0 ) no-repeat #332100;
+  background: blue;
+  background: -moz-linear-gradient(top, blue 50%, #000033 100%) no-repeat #000033;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, blue), color-stop(100%, #000033)) no-repeat #000033;
+  background: -webkit-linear-gradient(top, blue 50%, #000033 100%) no-repeat #000033;
+  background: -o-linear-gradient(top, blue 50%, #000033 100%) no-repeat #000033;
+  background: -ms-linear-gradient(top, blue 50%, #000033 100%) no-repeat #000033;
+  background: linear-gradient(to bottom, blue 50%, #000033 100%) no-repeat #000033;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='$primary-bg-gradient-second-color',GradientType=0 ) no-repeat #000033;
   color: white; }
   body a {
     color: blue; }
@@ -169,11 +169,11 @@ nav {
     nav .menu-button .carrot {
       right: 20px; }
     nav .menu-button:hover {
-      color: orange; }
+      color: blue; }
       nav .menu-button:hover .carrot {
-        border-top: 5px solid orange; }
+        border-top: 5px solid blue; }
       nav .menu-button:hover .carrot-right {
-        border-left: 5px solid orange; }
+        border-left: 5px solid blue; }
     @media (max-width: 768px) {
       nav .menu-button {
         display: block; } }
@@ -205,17 +205,17 @@ nav {
     cursor: pointer;
     background: #4d4d4d; }
     nav ul li:hover a {
-      color: orange; }
+      color: blue; }
   nav ul li a {
     color: white; }
     nav ul li a:hover {
-      color: orange; }
+      color: blue; }
   nav li.parent {
     position: relative; }
     nav li.parent:hover .carrot {
-      border-top: 5px solid orange; }
+      border-top: 5px solid blue; }
     nav li.parent:hover .carrot-right {
-      border-left: 5px solid orange; }
+      border-left: 5px solid blue; }
   nav ul.child {
     display: none;
     position: absolute;
@@ -242,16 +242,16 @@ footer {
   position: relative;
   height: 65px;
   line-height: 65px;
-  background: #d99a26;
-  background: -moz-linear-gradient(top, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #d99a26), color-stop(100%, #ad7b1f)) no-repeat #ad7b1f;
-  background: -webkit-linear-gradient(top, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
-  background: -o-linear-gradient(top, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
-  background: -ms-linear-gradient(top, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
-  background: linear-gradient(to bottom, #d99a26 50%, #ad7b1f 100%) no-repeat #ad7b1f;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$footer-bg', endColorstr='$secondary-footer-bg',GradientType=0 ) no-repeat #ad7b1f;
+  background: #2626d9;
+  background: -moz-linear-gradient(top, #2626d9 50%, #1f1fad 100%) no-repeat #1f1fad;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #2626d9), color-stop(100%, #1f1fad)) no-repeat #1f1fad;
+  background: -webkit-linear-gradient(top, #2626d9 50%, #1f1fad 100%) no-repeat #1f1fad;
+  background: -o-linear-gradient(top, #2626d9 50%, #1f1fad 100%) no-repeat #1f1fad;
+  background: -ms-linear-gradient(top, #2626d9 50%, #1f1fad 100%) no-repeat #1f1fad;
+  background: linear-gradient(to bottom, #2626d9 50%, #1f1fad 100%) no-repeat #1f1fad;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$footer-bg', endColorstr='$secondary-footer-bg',GradientType=0 ) no-repeat #1f1fad;
   border-top: 2px solid;
-  border-top-color: #ffc966;
+  border-top-color: #6666ff;
   box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.5);
@@ -311,7 +311,7 @@ footer {
   width: 60px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -331,7 +331,7 @@ footer {
   width: 140.0px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -351,7 +351,7 @@ footer {
   width: 220.0px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -371,7 +371,7 @@ footer {
   width: 300.0px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -391,7 +391,7 @@ footer {
   width: 379.99999px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -411,7 +411,7 @@ footer {
   width: 459.99999px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -431,7 +431,7 @@ footer {
   width: 539.99999px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -451,7 +451,7 @@ footer {
   width: 619.99999px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -471,7 +471,7 @@ footer {
   width: 699.99999px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -491,7 +491,7 @@ footer {
   width: 779.99999px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -511,7 +511,7 @@ footer {
   width: 859.99999px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -531,7 +531,7 @@ footer {
   width: 939.99999px;
   height: 100%;
   float: left;
-  background: #e69e19;
+  background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
   @media (min-width: 1200px) {
@@ -647,9 +647,10 @@ footer {
       margin-left: 699.33332px; } }
 
 .hero {
-  background: #999999;
+  background: yellow;
   overflow: hidden;
   margin-bottom: 10px;
+  color: blue;
   text-align: center; }
   .hero [class^="col"] {
     background: transparent; }

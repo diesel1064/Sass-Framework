@@ -1,5 +1,5 @@
 //USER DEFINED COLOR SETTINGS
-$primary-bg: orange;
+$primary-bg: blue;
 	$primary-bg-gradient: true;
 		$primary-bg-gradient-second-color: darken($primary-bg, 40%);
 $primary-text-color: #FFF;
@@ -8,13 +8,20 @@ $link-color: blue;
 $column-bg: desaturate($primary-bg, 20%); //OR SET TO TRANSPARENT FOR CLEAR
 	$column-text-color: inherit;
 $footer-bg: desaturate($primary-bg, 30%);
+
+//HEADER SECTION
 $header-height: 150px;
+
+//NAVIGATION SECTION
 $navigation-bg-color: #333;
 	$navigation-text-color: #fff;
 		$navigation-text-hover-color: $primary-bg;
 			$navigation-full-width: true;
-$hero-bg: #999;
-	$hero-text-align: center;
+
+//HERO SECTION BELOW NAVIGATION
+$hero-bg: complement($primary-bg);
+	$hero-bg-color: complement($hero-bg);
+		$hero-text-align: center;
 
 //USER DEFINED STYLE SETTINGS
 $sticky-footer: true;
