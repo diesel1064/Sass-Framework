@@ -4,12 +4,12 @@
 //	Licensed under http://www.apache.org/licenses/LICENSE-2.0
 //
 
-@import "_reset.scss";
+@import "_sass-framework/_reset.scss";
 @import "_user-variables.scss";
-@import "_variables.scss";
-@import "_mixins.scss";
-@import "_globals.scss";
-@import "_grid.scss";
+@import "_sass-framework/_variables.scss";
+@import "_sass-framework/_mixins.scss";
+@import "_sass-framework/_globals.scss";
+@import "_sass-framework/_grid.scss";
 
 .hero {
 	background: $hero-bg;

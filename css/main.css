@@ -289,9 +289,9 @@ footer {
     display: block;
     width: 0;
     height: 0; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .container {
-      width: 1200px; } }
+      width: 1300px; } }
   @media (min-width: 768px) and (max-width: 960px) {
     .container {
       width: 768px; } }
@@ -314,9 +314,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col1 {
-      width: 80.0px;
+      width: 86.66667px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col1 {
@@ -334,9 +334,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col2 {
-      width: 180.0px;
+      width: 193.33333px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col2 {
@@ -354,9 +354,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col3 {
-      width: 280.0px;
+      width: 300.0px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col3 {
@@ -374,9 +374,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col4 {
-      width: 380.0px;
+      width: 406.66666px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col4 {
@@ -394,9 +394,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col5 {
-      width: 479.99999px;
+      width: 513.33333px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col5 {
@@ -414,9 +414,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col6 {
-      width: 579.99999px;
+      width: 619.99999px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col6 {
@@ -434,9 +434,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col7 {
-      width: 679.99999px;
+      width: 726.66666px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col7 {
@@ -454,9 +454,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col8 {
-      width: 779.99999px;
+      width: 833.33332px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col8 {
@@ -474,9 +474,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col9 {
-      width: 879.99999px;
+      width: 939.99999px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col9 {
@@ -494,9 +494,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col10 {
-      width: 979.99999px;
+      width: 1046.66666px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col10 {
@@ -514,9 +514,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col11 {
-      width: 1079.99999px;
+      width: 1153.33332px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col11 {
@@ -534,9 +534,9 @@ footer {
   background: #1919e6;
   margin: 0 10.0px;
   color: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .col12 {
-      width: 1179.99999px;
+      width: 1259.99999px;
       margin: 0 10.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .col12 {
@@ -549,99 +549,99 @@ footer {
 
 .offset1 {
   margin-left: 90.0px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset1 {
-      margin-left: 110.0px; } }
+      margin-left: 116.66666px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset1 {
       margin-left: 72.66666px; } }
 
 .offset2 {
   margin-left: 170.0px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset2 {
-      margin-left: 210.0px; } }
+      margin-left: 223.33333px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset2 {
       margin-left: 135.33333px; } }
 
 .offset3 {
   margin-left: 250.0px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset3 {
-      margin-left: 310.0px; } }
+      margin-left: 330.0px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset3 {
       margin-left: 198.0px; } }
 
 .offset4 {
   margin-left: 329.99999px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset4 {
-      margin-left: 409.99999px; } }
+      margin-left: 436.66666px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset4 {
       margin-left: 260.66666px; } }
 
 .offset5 {
   margin-left: 409.99999px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset5 {
-      margin-left: 509.99999px; } }
+      margin-left: 543.33333px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset5 {
       margin-left: 323.33333px; } }
 
 .offset6 {
   margin-left: 489.99999px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset6 {
-      margin-left: 609.99999px; } }
+      margin-left: 649.99999px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset6 {
       margin-left: 385.99999px; } }
 
 .offset7 {
   margin-left: 569.99999px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset7 {
-      margin-left: 709.99999px; } }
+      margin-left: 756.66666px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset7 {
       margin-left: 448.66666px; } }
 
 .offset8 {
   margin-left: 649.99999px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset8 {
-      margin-left: 809.99999px; } }
+      margin-left: 863.33332px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset8 {
       margin-left: 511.33332px; } }
 
 .offset9 {
   margin-left: 729.99999px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset9 {
-      margin-left: 909.99999px; } }
+      margin-left: 969.99999px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset9 {
       margin-left: 573.99999px; } }
 
 .offset10 {
   margin-left: 809.99999px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset10 {
-      margin-left: 1009.99999px; } }
+      margin-left: 1076.66665px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset10 {
       margin-left: 636.66665px; } }
 
 .offset11 {
   margin-left: 889.99999px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .offset11 {
-      margin-left: 1109.99999px; } }
+      margin-left: 1183.33332px; } }
   @media (min-width: 768px) and (max-width: 959px) {
     .offset11 {
       margin-left: 699.33332px; } }
